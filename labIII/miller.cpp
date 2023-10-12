@@ -1,11 +1,10 @@
 #include <iostream>
 #include <bits/stdc++.h>
+#include <math.h>
 using namespace std;
 
-.
-    // It returns (x^y) % p
-    int
-    power(int x, unsigned int y, int p)
+// It returns (x^y) % p
+int power(int x, unsigned int y, int p)
 {
   int res = 1;
   x = x % p;
