@@ -1,0 +1,23 @@
+The SHA-512 algorithm uses a number of functions and constants to combine and rotate 64-bit values in a specific way. This process is repeated for each block of the input message. The final result is a 512-bit hash value, which is a unique fingerprint for the input message.
+
+The SHA-512 algorithm is used in a variety of applications, including digital signatures, file integrity checking, and password hashing. It is a secure and reliable algorithm that is widely trusted by the security community.
+
+Functions:
+
+Ch(e, f, g): This function computes the Ch operation, which is used to combine three 64-bit values into a single 64-bit value.
+Maj(a, b, c): This function computes the Maj operation, which is also used to combine three 64-bit values into a single 64-bit value.
+rotr(x, n): This function rotates a 64-bit value to the right by n bits.
+summation_a(a): This function computes a summation operation on a 64-bit value, which involves a series of bitwise operations.
+summation_e(e): This function computes a summation operation on a 64-bit value, which involves a series of bitwise operations.
+sigma_0(word): This function computes a sigma operation on a 64-bit word, which involves a series of bitwise operations.
+sigma_1(word): This function computes a sigma operation on a 64-bit word, which involves a series of bitwise operations.
+addition_modulo_2_64(value): This function adds a value to itself modulo 2^64, which keeps the value within the 64-bit range.
+pad_message(message): This function pads the input message to meet the requirements of the SHA-512 algorithm.
+divide_to_blocks(message): This function divides the padded message into blocks of 128 bytes, which are processed one at a time.
+compression_function(message): This function is the core of the SHA-512 algorithm. It takes a message block as input and updates the hash values using the SHA-512 compression algorithm.
+
+
+Constants:
+
+K (Additive Constants): These are a set of predefined constants used in the SHA-512 compression algorithm.
+HASH_VALUE (Initial Hash Value): These are the initial hash values used at the beginning of the SHA-512 hash calculation. They are updated as the algorithm processes the message blocks.
